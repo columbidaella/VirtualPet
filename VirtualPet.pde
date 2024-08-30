@@ -1,17 +1,35 @@
-
 void setup(){
   //some of your code here
 size(500,500);
 }
-void draw(){
   //more of your code here
+void draw(){
 background(#74A8FF);
 noStroke();
 //grass
 fill(#5FA017);
 ellipse(200,480,800,300);
+//tail
+fill(#904B01);
+ellipse(379,245,32,35);
+quad(360,245,395,240,404,400,360,400);
+ellipse(380,400,48,20);
+//body
+fill(#BC732A);
+arc(250,215,260,220,radians(45),radians(135));
+fill(#74A8FF);
+ellipse(253,165,140,150);
+fill(#BC732A);
+ellipse(320,270,126,100);
+quad(290,300,380,285,360,350,330,350);
+//mane
+fill(#904B01);
+arc(110,272,220,230,radians(270),radians(360));
+ellipse(105,193,87,72);
+triangle(62,190,100,200,82,260);
 //neck
 fill(#BC732A);
+ellipse(185,275,110,120);
 arc(110,272,190,200,radians(270),radians(360));
 fill(#74A8FF);
 arc(110,272,40,100,radians(270),radians(360));
@@ -20,13 +38,24 @@ fill(#BC732A);
 ellipse(100,200,60,60);
 quad(105,220,70,200,54,236,72,250);
 ellipse(60,250,30,30);
-//body
-arc(250,215,260,220,radians(45),radians(135));
-fill(#74A8FF);
-ellipse(253,165,140,150);
+ellipse(100,162,12,22);
+triangle(103,155,101,175,110,175);
+//legs
+quad(145,300,210,320,190,390,175,390);
+quad(330,350,360,310,375,380,355,380);
+ellipse(181,385,22,30);
+ellipse(364,377,27,33);
+quad(174,392,191,392,194,423,178,428);
+fill(#7C7069);
+arc(175,415,50,55,radians(45),radians(120));
+arc(355,415,50,55,radians(45),radians(120));
 fill(#BC732A);
-ellipse(185,275,110,120);
-ellipse(324,270,130,100);
-quad(290,300,383,290,340,360,320,360);
+ellipse(182,420,20,18);
+ellipse(362,420,20,18);
+quad(355,380,375,380,375,420,355,423);
+//face
+fill(#5E443E);
+ellipse(55,250,3,7);
+fill(#4C2813);
+ellipse(90,200,10,8);
 }
-
